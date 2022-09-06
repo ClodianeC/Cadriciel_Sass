@@ -551,21 +551,21 @@ h4,
 /****** Base commune *******/
 /* Bouton du menu */
 .nav__control {
-  background-color: rgba(145, 0, 145, 0.2);
+  background-color: rgb(248, 175, 86);
   border: none;
   padding: 10px;
   min-width: 40px;
 }
-
 @media (min-width: 600px) {
   .nav__control {
     display: none;
   }
 }
+
 .nav__control:hover,
 .nav__control:active {
   color: #fff;
-  background-color: darkmagenta;
+  background-color: darkorange;
 }
 
 .nav__control:focus {
@@ -581,7 +581,7 @@ h4,
    * de modifier l'apparence du outline par défaut des navigateurs.
    */
   outline-offset: -5px;
-  outline: darkmagenta auto 5px;
+  outline: darkorange auto 5px;
 }
 
 /* Liste du menu */
@@ -599,31 +599,26 @@ h4,
 }
 /* Liens du menu */
 .nav__link {
-  background-color: rgba(145, 0, 145, 0.2);
+  background-color: rgb(248, 175, 86);
   display: block;
   padding: 5px 10px;
   width: 100%;
 }
-
-.nav__link:link,
-.nav__link:visited {
+.nav__link:link, .nav__link:visited {
   text-decoration: none;
   color: inherit;
 }
-
 .nav__link:hover {
   color: #fff;
-  background-color: darkmagenta;
+  background-color: darkorange;
 }
-
 .nav__link:active {
   color: #fff;
   background-color: magenta;
 }
-
 .nav__link:focus {
   outline-offset: -5px;
-  outline: darkmagenta auto 5px;
+  outline: darkorange auto 5px;
 }
 
 @media (min-width: 600px) {
@@ -636,13 +631,17 @@ h4,
     pour l'item de menu actif
     **/
 .nav__link--active {
-  border-left: 5px solid rgb(101, 68, 180);
+  border-style: solid;
+  border-left-width: 5px;
+  border-left-color: #432bf8;
 }
 
 @media (min-width: 600px) {
   .nav__link--active {
     border-left: none;
-    border-bottom: 5px solid rgb(101, 68, 180);
+    border-style: solid;
+    border-bottom-width: 5px;
+    border-bottom-color: rgb(101, 68, 180);
   }
 }
 /** 
@@ -731,7 +730,7 @@ h4,
 /* Mise en page
    ========================================================================== */
 body {
-  color: #022b50;
+  color: #503b02;
 }
 
 header .h1,
@@ -740,12 +739,12 @@ aside h3 {
   margin-top: 0;
 }
 
-.description .h2 {
+.description h1 {
   padding-top: 2rem;
 }
 
 @media (min-width: 601px) {
-  .description .h2 {
+  .description h2 {
     padding-top: 0;
   }
   .cols7de12 {
@@ -764,7 +763,7 @@ footer {
 header {
   padding: 1rem;
   border-bottom: 0.5rem solid #efefef;
-  border-image: linear-gradient(#418cff, darkmagenta) 27;
+  border-image: linear-gradient(#432bf8, darkorange) 27;
 }
 
 /*** Contenus principal et complémentaire ***/
@@ -780,12 +779,12 @@ aside {
 .description {
   padding: 0 2rem 0;
   border-left: 5rem solid #efefef;
-  border-image: linear-gradient(darkmagenta, #418cff) 27;
+  border-image: linear-gradient(darkorange, #432bf8) 27;
 }
 
 .description .h2,
 aside h2 {
-  color: darkmagenta;
+  color: darkorange;
 }
 
 aside h2 {
@@ -829,7 +828,7 @@ dl,
 }
 dt {
   font-family: NewsCycle-bold, sans-serif;
-  color: darkmagenta;
+  color: darkorange;
 }
 
 @media (min-width: 601px) {
@@ -859,7 +858,7 @@ dt::before {
 }
 
 strong.purple {
-  color: darkmagenta;
+  color: darkorange;
   text-transform: uppercase;
 }
 

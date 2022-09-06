@@ -17,7 +17,7 @@
 /* Bouton du menu */
 .nav {
     &__control {
-        background-color: rgba(145, 0, 145, 0.2);
+        background-color: $couleur-background;
         border: none;
         padding: 10px;
         min-width: 40px;        
@@ -31,7 +31,7 @@
 .nav__control:hover,
 .nav__control:active {
     color:#fff;
-    background-color: darkmagenta;
+    background-color: $couleur-dominante;
 }
 
 .nav__control:focus {
@@ -47,7 +47,7 @@
      * de modifier l'apparence du outline par défaut des navigateurs.
      */
     outline-offset: -5px;
-    outline: darkmagenta auto 5px;
+    outline: $couleur-dominante auto 5px;
 }
 
 /* Liste du menu */
@@ -65,7 +65,7 @@
 
 /* Liens du menu */
 .nav__link {
-    background-color: rgba(145, 0, 145, 0.2);
+    background-color: $couleur-background;
     display: block;
     padding: 5px 10px;
     width: 100%;
@@ -75,7 +75,7 @@
     }
     &:hover {
     color:#fff;
-    background-color: darkmagenta;
+    background-color: $couleur-dominante;
     }
     &:active{
     color:#fff;
@@ -83,7 +83,7 @@
     }
     &:focus{
     outline-offset: -5px;
-    outline: darkmagenta auto 5px;        
+    outline: $couleur-dominante auto 5px;        
     }
 }
 
@@ -102,7 +102,7 @@
         style: solid;
         left: {
             width: 5px;
-            color: rgba(101, 68, 180, 1);
+            color: $couleur-secondaire;
         }
     }
 }
